@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-       OnDeleteView()
+        OnDeleteView()
     }
 }
 
@@ -21,7 +21,7 @@ struct OnDeleteView: View {
         NavigationView {
             VStack {
                 List {
-                    ForEach(numbers, id: \.self){
+                    ForEach(numbers, id: \.self) {
                         Text("Row \($0)")
                     }
                     .onDelete(perform: removeRows)
@@ -41,7 +41,6 @@ struct OnDeleteView: View {
     func removeRows(at offsets: IndexSet) {
         numbers.remove(atOffsets: offsets)
     }
-
 }
 
 struct ContentView_Previews: PreviewProvider {

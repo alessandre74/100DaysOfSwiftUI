@@ -20,11 +20,11 @@ struct ContentView: View {
 struct Image1View: View {
     var body: some View {
         Image("mac")
-        .resizable()
-        .scaledToFit()
+            .resizable()
+            .scaledToFit()
 //            .scaledToFill()
-        .cornerRadius(6)
-        .frame(width: 300, height: 300)
+            .cornerRadius(6)
+            .frame(width: 300, height: 300)
 //            .clipped()
     }
 }
