@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        LazyVGridView()
+        // LazyVGridView()
+        LazyHGridView()
     }
 }
 
@@ -18,8 +19,8 @@ struct LazyVGridView: View {
 
     var body: some View {
         ScrollView {
-            LazyVGrid (columns: layout) {
-                ForEach(0..<1000) {
+            LazyVGrid(columns: layout) {
+                ForEach(0 ..< 1000) {
                     Text("Item \($0)")
                 }
             }
@@ -31,14 +32,13 @@ struct LazyHGridView: View {
     let layout = [GridItem(.adaptive(minimum: 80, maximum: 120))]
 
     var body: some View {
-        ScrollView (.horizontal){
-            LazyHGrid (rows: layout) {
-                ForEach(0..<1000) {
+        ScrollView(.horizontal) {
+            LazyHGrid(rows: layout) {
+                ForEach(0 ..< 1000) {
                     Text("Item \($0)")
                 }
             }
         }
-
     }
 }
 

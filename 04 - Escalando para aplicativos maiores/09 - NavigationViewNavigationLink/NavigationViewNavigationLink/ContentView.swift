@@ -10,10 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            List(0..<100) { row in
-                NavigationLink{
+            List(0 ..< 100) { row in
+                NavigationLink {
                     Text("Detail \(row)")
-
                 } label: {
                     Text("Row \(row)")
                 }

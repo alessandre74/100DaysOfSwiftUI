@@ -4,11 +4,9 @@
 //
 //  Created by Alessandre Livramento on 09/11/22.
 //
-
-import Inject
 import SwiftUI
 
-struct Triangule: Shape {
+struct Triangle: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
 
@@ -38,8 +36,9 @@ struct Square: Shape {
 struct ContentView: View {
     var body: some View {
         VStack {
-            Triangule()
-                .fill(.blue)
+            Triangle()
+//                .fill(.blue)
+                .stroke(.red, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
                 .frame(width: 200, height: 200)
 
             Text("Alessandre")
