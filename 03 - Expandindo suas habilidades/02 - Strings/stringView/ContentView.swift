@@ -79,12 +79,12 @@ struct WorkingStringsView: View {
     }
 
     func StringLetters() -> Bool {
-//        let input = "A l e s s a n d r e"
-//        let letters = input.components(separatedBy: " ") // Divide em um array com base em separatedBy.
+        let input = "A l e s s a n d r e"
+        let letters = input.components(separatedBy: " ") // Divide em um array com base em separatedBy.
 
-//        let letter = letters.randomElement() // Obtém uma letra aleatória do array
+        let letter = letters.randomElement() // Obtém uma letra aleatória do array
 
-//        let trimmed = letter?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "" // Limpas espaços iniciais e finais de uma string
+        let trimmed = letter?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "" // Limpas espaços iniciais e finais de uma string
 
         let word = "Specing"
         let checker = UITextChecker()
