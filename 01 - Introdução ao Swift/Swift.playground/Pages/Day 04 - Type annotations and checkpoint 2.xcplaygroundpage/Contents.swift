@@ -62,9 +62,9 @@ var style: UIStyle = UIStyle.light
 style = .dark
 
 /**
- Isso é o que permite que o Swift remova o nome do enum para atribuições futuras, para que possamos escrever style = .dark- ele sabe que qualquer novo valor para styledeve ser algum tipoUIStyle.
+ Isso é o que permite que o Swift remova o nome do enum para atribuições futuras, para que possamos escrever style = .dark- ele sabe que qualquer novo valor para style deve ser algum tipo UIStyle.
 
- Agora, há uma boa chance de você perguntar quando você deve usar anotações de tipo, então pode ser útil para você saber que eu prefiro usar inferência de tipo tanto quanto possível, o que significa que eu atribuo um valor a uma constante ou variável e Swift escolhe o tipo correto automaticamente. Às vezes, isso significa usar algo como var score = 0.0para que eu obtenha um arquivo Double.
+ Agora, há uma boa chance de você perguntar quando você deve usar anotações de tipo, então pode ser útil para você saber que eu prefiro usar inferência de tipo tanto quanto possível, o que significa que eu atribuo um valor a uma constante ou variável e Swift escolhe o tipo correto automaticamente. Às vezes, isso significa usar algo como var score = 0.0 para que eu obtenha um arquivo Double.
 
  A exceção mais comum a isso é com constantes para as quais ainda não tenho um valor. Veja bem, o Swift é realmente inteligente: você pode criar uma constante que ainda não tem um valor, mais tarde fornecer esse valor, e o Swift garantirá que não a usemos acidentalmente até que um valor esteja presente. Também garantirá que você defina o valor apenas uma vez, para que permaneça constante.
 
@@ -76,11 +76,11 @@ username = "@twostraws"
 print(username)
 
 /**
- Esse código é legal: estamos dizendo usernameque conterá uma string em algum momento e fornecemos um valor antes de usá-lo. Se a linha de atribuição – username = "@twostraws"– estivesse faltando, então Swift se recusaria a construir nosso código porque usernamenão teria um valor, e da mesma forma se tentássemos definir um valor para usernameuma segunda vez, Swift também reclamaria.
+ Esse código é legal: estamos dizendo username que conterá uma string em algum momento e fornecemos um valor antes de usá-lo. Se a linha de atribuição – username = "@twostraws"– estivesse faltando, então Swift se recusaria a construir nosso código porque username não teria um valor, e da mesma forma se tentássemos definir um valor para username uma segunda vez, Swift também reclamaria.
 
-Esse tipo de código requer uma anotação de tipo, pois sem um valor inicial atribuído, o Swift não sabe que tipo de dados usernameconterá.
+Esse tipo de código requer uma anotação de tipo, pois sem um valor inicial atribuído, o Swift não sabe que tipo de dados username conterá.
 
-Independentemente de você usar inferência de tipo ou anotação de tipo, há uma regra de ouro: o Swift deve sempre saber quais tipos de dados suas constantes e variáveis ​​contêm. Isso é o cerne de ser uma linguagem de tipo seguro e nos impede de fazer coisas sem sentido como 5 + trueou semelhantes.
+Independentemente de você usar inferência de tipo ou anotação de tipo, há uma regra de ouro: o Swift deve sempre saber quais tipos de dados suas constantes e variáveis ​​contêm. Isso é o cerne de ser uma linguagem de tipo seguro e nos impede de fazer coisas sem sentido como 5 + true ou semelhantes.
 
 Importante: Embora a anotação de tipo possa nos permitir substituir a inferência de tipo do Swift até certo ponto, nosso código finalizado ainda deve ser possível. Por exemplo, isso não é permitido:
 
@@ -104,7 +104,3 @@ print("")
 let people1 = Set(people)
 print("Eliminando duplicatas do array original: \(people1.sorted())")
 print("Número de itens únicos: \(people1.count)")
-
-
-
-
