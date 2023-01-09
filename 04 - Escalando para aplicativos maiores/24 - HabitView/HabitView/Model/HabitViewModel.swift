@@ -57,7 +57,6 @@ class HabitViewModel: ObservableObject {
     func save() {
         let item = Habit(title: title, description: description, habitCount: 0)
         items.append(item)
-
         reset()
     }
 
