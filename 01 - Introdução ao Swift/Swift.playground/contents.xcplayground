@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Day 01 - variables, constants, string and numbers'/>
+        <page name='Day 02 - Booleans, string interpolation, and checkpoint 1'/>
+        <page name='Day 03 - Arrays, dictionaries, sets, and enums'/>
+        <page name='Day 04 - Type annotations and checkpoint 2'/>
+        <page name='Day 05 - if, switch, and the ternary operator'/>
+        <page name='Day 06 - loops, summary, and checkpoint 3'/>
+        <page name='Day 07 - functions, parameters, and return values'/>
+        <page name='Day 08 - default values, throwing functions, and checkpoint 4'/>
+        <page name='Day 09 - closures, passing functions into functions, and checkpoint 5'/>
+        <page name='Day 010 - structs, computed properties, and property observers'/>
+        <page name='Day 011 - access control, static properties and methods, and checkpoint 6'/>
+        <page name='Day 012 - classes, inheritance, and checkpoint 7'/>
+        <page name='Day 013 - protocols, extensions, and checkpoint 8'/>
+        <page name='Day 014 - optionals, nil coalescing, and checkpoint 9'/>
+        <page name='Day 015 - Swift review'/>
+        <page name='DateFomatterDateStyleTimeStyle'/>
+        <page name='DateFormatterFormat'/>
+        <page name='DateInSwiftiUI-iOS14'/>
+        <page name='FirstIndex'/>
+    </pages>
+</playground>
